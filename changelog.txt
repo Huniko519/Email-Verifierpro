@@ -1,0 +1,34 @@
+Version 1.6
+Fixed: license key activation
+Fixed: license key activation
+Fixed: installation error field value not found
+Fixed: user ip visibility issue
+Fixed: user list navigation
+Fixed: login issue in IE
+Update: documentation - troubleshooting
+
+VERSION 1.5
+Design improvement
+Added: Background mail verification process
+Added: Quick Validator
+
+VERSION 1.4
+Added: Multi user system
+Added: Segment based result export
+Added: User management
+Added: Dashboard Report
+
+
+VERSION 1.3
+Added: Additional Settings
+Added: User Profile
+VERSION 1.2
+
+Added .htaccess
+VERSION 1.1
+
+Adding more error handling at installation script.
+Adding password reset features.
+
+VERSION 1.0
+Initial Release.

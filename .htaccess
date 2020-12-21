@@ -1,0 +1,39 @@
+<IfModule mod_headers.c>
+# set the samesite cookies
+Header always edit Set-Cookie (.*) "$1; SameSite=Strict"
+
+# set the X-Frame-Options header to http request.
+Header set X-Frame-Options DENY 
+
+# set the X-XSS-Protection header to http request.
+Header set X-XSS-Protection: "1; mode=block"
+
+# set the Referrer-Policy to none
+Header set Referrer-Policy "no-referrer"
+
+# set X-Content-Type-Options Header
+Header set X-Content-Type-Options nosniff
+
+# set the Feature-Policy to self
+Header set Feature-Policy "sync-xhr 'self'"
+
+#Header set Content-Security-Policy 
+#Header always set Content-Security-Policy "default-src 'none'; base-uri 'self'; connect-src 'self' ; frame-ancestors 'none'; img-src data: 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; script-src 'self' 'unsafe-inline'; font-src 'self' data: fonts.gstatic.com  fonts.googleapis.com fonts.static.com;"
+</IfModule>
+ 
+
+RewriteEngine on
+RewriteBase /
+
+
+# Force HTTPS on the subdomains/subdirectories login or admin
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} ^(login|admin)\. [NC]
+#RewriteCond %{REQUEST_URI} ^(login|admin)\. [NC,OR]
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Force WWW if no subdomain is given
+#RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+#RewriteCond %{HTTP_HOST} !^$
+#RewriteCond %{HTTPS}s ^on(s)|
+#RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

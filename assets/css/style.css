@@ -1,0 +1,355 @@
+/* Body Elements */
+.bg-gradient-primary {
+	background-color: #37497d;
+    background-image: url('../app-img/bg2.png');
+    background-size: cover;
+}
+.sidebar {
+	background-color: #37497d;
+    background-image: inherit;
+    background-size: cover;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #516bf0;
+    border-color: #516bf0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #516bf0;
+}
+.btn-info {
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #74a938;
+    border-color: #74a938;
+}
+.bg-success {
+    background-color: #000000;
+}
+
+.table thead th {
+    vertical-align: middle;
+    border: 2px solid #e3e6f0;
+}
+
+table {
+    border:1px solid #e3e6f0;
+    border-collapse: collapse;
+}
+
+table td {
+    border-left: 1px solid #e3e6f0;
+    border-right: 1px solid #e3e6f0;
+}
+
+table .badge-success {
+    color: #fff;
+    background-color: #8BC34A;
+    margin: 0 auto;
+    max-width: 65px;
+    padding: 4px;
+    vertical-align: middle;
+    display: block;
+    text-transform: uppercase;
+}
+
+h1.h3 {
+   display:inline-block;
+}
+
+
+@media only screen and (max-width:767px) {
+	.dashboard_head .pull-right {
+		margin-top: 10px;
+	}
+	.row.dashboard_content {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+		margin-right: 0;
+		display: inline-block;
+	}
+
+	.dashboard_content .mb-4 {
+		padding: 0;
+	}
+}
+
+/* Portal Access Box */
+.access_box .img-thumbnail {
+	max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+.access_box  form.user .form-control-user {
+    padding: 1rem;
+}
+
+.access_box .form-control {
+    height: auto;
+}
+
+
+
+/* Email Verify */
+
+
+.scan_list {
+	background-color: #eef1f9;
+	margin-bottom: 30px;
+	border-radius: 5px; 
+}
+
+.scan_list .table {
+		margin-bottom:0px;
+}
+
+.scan_list .p-3 {
+    padding: 0rem;
+    margin-bottom: 1rem;
+}
+
+.scan_list .verify_email {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 140px;
+}
+
+.scan_list .chart-pie {
+    height: auto;
+    padding: 0 !important;
+	margin: 1.5rem 0;
+}
+
+@media only screen and (max-width:991px) {
+	.scan_list .verify_email {
+		margin-top:inherit;
+		padding: 2px 15px;
+		margin: 12px auto;
+		display: block;
+	}
+	.scan_list .card {
+    margin-top: 15px;
+    margin-bottom: 0;
+	}
+	.scan_list .preloader {
+		margin-top: 50px;
+	}
+
+}
+
+@media only screen and (max-width:767px) {
+	.pull-right {
+		float:right;
+	}
+	.verify_email {
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin: 20px auto;
+	}
+}
+
+
+.preloader{
+  text-align: center;
+  display: none;
+  margin-top: 125px;
+}
+.preloader .spinner-border{
+  width: 5rem;
+  height: 5rem;
+}
+.verify-chart{
+  display: none;
+}
+.cart_sizing{	
+  max-width: 550px;	
+  max-height: 290px;
+  margin: 0 auto;  
+}
+.verify_email{
+  margin-top: 140px;
+}
+.found-email-result {
+    overflow-x: auto;
+}
+.task-cancel-btn{
+  margin: 20px;
+}
+
+/* Quick Email Validation */
+.quick-mail{
+  cursor: pointer;
+}
+.q-validate {
+    display: inline-block;
+    margin-left: 10px;
+}
+#limit-notice{
+  display: none;
+}
+#delete_all_email_count{
+  display: none;
+}
+#table-value-sec{
+  display: none;
+      overflow-x: auto;
+}
+#csv_download_quick_mail{
+  display: none;
+}
+#load_verify_quick_mail{
+  display: none;
+}
+#customfiled{
+  display: none;
+}
+#image-change-btn{
+  margin-top: -80px;
+  margin-left: 10px;
+}
+
+#addList, #quickvalidation, .csv_download {
+    top: 20%;
+}
+
+#addList input {
+	margin: 120px 280px auto;
+}
+
+@media only screen and (max-width:991px) {
+	#addList input{
+		margin:25%;
+	}
+}
+@media only screen and (max-width:767px) {
+	#addList input{
+		margin:20%;
+	}
+}
+@media only screen and (max-width:465px) {
+	#addList input{
+		margin:15%;
+	}
+}
+
+#quickvalidation .modal-body {
+    min-height: 250px;
+}
+
+#csv_download {
+	padding: 0px;
+}
+
+/* Profile Settings */
+.profile-save-cancel{
+  background-color: #3D3D3D;
+}
+#change-image{
+  display: none;
+}
+.edit-btn{
+  cursor: pointer;
+}
+.change-sec{
+  display: none;
+}
+#add-more-btn{
+  cursor: pointer;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.cursor-pointer:hover{
+  opacity: 0.7;
+}
+#edit-sec{
+  display: none;
+}
+.user-img{
+  width: 100px;
+  border-radius: 10px;
+}
+.logo-img{	
+  width: 40px;	
+  height: auto;	
+}	
+/* --------------------------install--------- */	
+section.install{	
+	background: #F3F3F3;	
+    padding: 50px;	
+    margin: 0;	
+}	
+@media only screen and (max-width:767px) {	
+	section.install {	
+		padding: 2%;	
+	}	
+}	
+.versions_table,.versions_table td,.versions_table th {	
+  border: 1px solid #EAE8E4;	
+  text-align: center;	
+}	
+.versions_table tr th:first-child,.versions_table tr td:first-child{	
+  text-align: left;	
+}	
+.versions_table {	
+  border-collapse: collapse;	
+  width: 100%;	
+  color:black;	
+  margin-bottom:20px;	
+}	
+.versions_table th {	
+  height: 50px;	
+}	
+.versions_table th,.versions_table td{	
+  padding-left: 10px;	
+}	
+.problem_found,.version_check_error{	
+  color:red;	
+}	
+#problem_found, #version_problem {	
+    padding:0px;	
+}	
+.problem_found li {	
+	border: 1px solid #EAE8E4;	
+    margin: 10px 0;	
+    padding: 8px 10px;	
+    color: #c50e00;	
+    list-style: none;	
+    font-size: 15px;	
+    border-radius: 5px;	
+}	
+.problem_found h4{	
+  color:black;	
+}	
+.version_check_pass{	
+  color:green;	
+}	
+/* no-js-------------------------------------- */	
+/** js no script **/	
+.js_stop{	
+  width:100%;	
+  text-align:center;	
+  margin-top: 100px;	
+  margin-bottom: 100px;	
+  padding: 10px;	
+  display: inline-block;	
+  background: white;	
+  color: #222;	
+  padding:20px;	
+}	
+.js_stop strong {	
+	display: block;	
+    margin-bottom: 10px;	
+	color:red;	
+}

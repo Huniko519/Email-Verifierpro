@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=utf-8">
+   <title>Email Verifier Pro - Documentation</title>
+   <!-- Framework CSS -->
+   <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+   <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+   <!--[if lt IE 8]>
+   <link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection">
+   <![endif]-->
+   <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+   <style type="text/css" media="screen">
+      p, table, hr, .box { margin-bottom:25px; }
+	  p.alert {color: red;}
+      hr { margin:30px 0; }
+      .box p { margin-bottom:10px; }
+      h3 {
+      background: #516bf1;
+      color: #fff;
+      padding: 10px;
+      }
+      h3 a {
+      color: #fff;
+      }
+      .img-cont img {
+      margin: 20px 0;
+      }
+      h4 {
+      font-weight:bold;
+      }
+	  .q_scanlimit pre {
+		background:#f7f7f7;
+		padding-left: 15px;
+		padding-bottom: 15px;
+	  }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h1 class="center">&ldquo;Email Verifier Pro - Documentation&rdquo;</h1>
+      <div class="borderTop">
+         <div class="span-6 colborder info prepend-1">
+            <p class="prepend-top">
+               <strong>
+               Script Version: 1.5 <br>
+               Created: 09/Aug/2019<br>
+               Updated: 31/January/2020<br>
+               By: CreativeDev Studio<br>
+               Email: <a href="mailto:info@creativedevstudio.com">info@creativedevstudio.com</a>
+               </strong>
+            </p>
+         </div>
+         <!-- end div .span-6 -->        
+         <div class="span-12 last">
+            <p class="prepend-top append-0">Thank you for purchasing our script. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://themeforest.net/user/CreativeDevStudioBD">here</a>. Thanks so much!</p>
+         </div>
+      </div>
+      <!-- end div .borderTop -->
+      <hr>
+      <h2 id="toc" class="alt">Table of Contents</h2>
+      <ol class="alpha">
+         <li><a href="#installation">INSTALLATION</a></li>
+         <li><a href="#howtoDashboard">HOW TO USE - DASHBOARD</a></li>
+         <li><a href="#howtoMyListing">HOW TO USE - MY LISTING</a></li>
+		 <li><a href="#howtoLeadManagement">HOW TO USE - LEAD MANAGEMENT</a></li>
+         <li><a href="#howtoSendMail">HOW TO USE - SEND MAIL</a></li>
+         <li><a href="#howtoUserManagement">HOW TO USE - User MANAGEMENT</a></li>
+         <li><a href="#howtoProfile">HOW TO USE - PROFILE</a></li>
+         <li><a href="#howtoSettings">HOW TO USE - SETTINGS</a></li>
+         <li><a href="#evpTroubleshooting">TROUBLESHOOTING</a></li>
+         <li><a href="#evpChangelog">CHANGE LOG</a></li>
+         <li><a href="#evpSupport">SUPPORT, SOURCES & CREDITS</a></li>
+      </ol>
+      <hr>
+      <h3 id="installation"><strong>A) INSTALLATION</strong> - <a href="#toc">top</a></h3>
+      <h4>
+         Minimum Requirements For Installation
+      </h4>
+      <ul>
+         <li>Web Server: Apache/Nginx</li>
+         <li>PHP Version: 5.4+</li>
+         <li>MySQL / MariaDB Version: 5.6+ / 10+</li>
+         <li>Active PHP Functions: PHP Mail(), PHP Session. </li>
+         <li>Suppored Browser with Javascript & Cookies Enabled. </li>
+         <li>IE10 IE11, Edge, Firefox, Chrome, Safari, Opera</li>
+      </ul>
+      <p>After Uploading extracted files to "public_html" folder or domain public web folder via FTP, you have to visit install.php file path via browser for starting up the installation process. </p>
+      <p><b>File Path For Install.php :</b> yourdomain.com/app/install.php </p>
+      <p class="alert">
+         Do not forget to replace "yourdomain.com" with your own domain address.
+      </p>
+      <p>If this is a first time clean installation and not an update then you will be automatically redirected to install.php once you try to visit your domain. eg: yourdomain.com
+         But if you do not get redirect to install.php then you can simply visit it by following address: yourdomain.com/app/install.php
+      <h4>System Check:</h4>
+      <div class="img-cont">
+         <h4>STEP 1:</h4>
+         <img src="assets/images/install-check.png" alt="Installation Check" />
+      </div>
+      <br/> 
+      <p>At the very first step of install it will cross-check existing server compatibility with the script to ensure the highest compatibility. If you see something RED then make sure you have it supported and enabled. Please recheck Minimum Requirements support to run this script and make sure its all active and enabled on your server & browser before proceeding with installation. If you see MySQL version check skipped at system check in localhost then not to be worry, it will get check during database connection test at step 2.</p>
+	  
+	  <p class="alert">Add in your purchased product liccense and email information from envato to verify purchase and proceeding to step 2.</p>
+	  
+      <div class="img-cont">
+         <h4>STEP 2:</h4>
+         <img src="assets/images/db-config.png" alt="Database configuration" />
+      </div>
+      <p>Once everything has detected correctly and green, press "Next" and proceed to database configuration. Add in your database connection on this page and proceed to "Next" page.</p>
+      <div class="img-cont">
+         <h4>STEP 3:</h4>
+         <img src="assets/images/user-profile.png" alt="User Profile" />
+      </div>
+      <p>This is the final step to create your login user account. Just simply input in a name, username, email address and password with at least 6 digit and click "Complete". After this, your installation will be completed and you will be redirected to login page.</p>
+	  
+	  <h4>STEP 4:</h4>
+      <div class="img-cont">
+         <h4>Good Job! You Have Successfully Installed Me.</h4>
+         <img src="assets/images/login-welcome.png" alt="Login Welcome" />
+      </div>
+	  
+	  <p class="alert">
+         <strong>Delete install.php and script zip file from yourdomain.com/app/ via cpanel / filemanager.</strong>
+      </p>
+	  
+      <hr>
+      <h3 id="howtoDashboard"><strong>B) HOW TO USE - DASHBOARD</strong> - <a href="#toc">top</a></h3>
+
+      <p>(1.) After login with your created account. You will arrive at main page of the navigation menu, which is "DASHBOARD".</p>
+	  
+	    <div class="img-cont">
+         <img src="assets/images/dashboard.png" alt="EMAIL VALIDATION SYSTEM - Dashboard" />
+      </div>
+	  
+      <p>DASHBOARD, (2) Allows you to check report on your scan results and expenses. 
+
+	  
+	<p>  Also provides 2 actionable button (4) "Quick Validation" & "Add List", Which allows you to validate your email addresses. </p>
+	  
+	  
+	  <div class="img-cont">
+         <img src="assets/images/my_list_adding.png" alt="Email Validation - Add Listing" />
+      </div>
+	  
+	  
+	 <p> (3) On top right of screen you will find "Profile" and "Settings" for managing your personalize profile and system configurations.</p>
+
+      <div class="img-cont">
+         <img src="assets/images/profileNsettings.png" alt="User Menu" />
+      </div>
+	 
+	 
+      <hr>
+	   
+	   
+	     
+	  <h3 id="howtoMyListing"><strong>C) HOW TO USE - My Listing</strong> - <a href="#toc">top</a></h3>
+
+<p class="alert">Before using this for the first time, it is recommended that you setup script settings first for "Scan Email"</p>
+	  
+	  	        <p>After adding a csv list, it will autometically clear out duplicated email addresses and will enter only unique one into database for scanning. </p>
+
+	  
+	        <div class="img-cont">
+         <img src="assets/images/my_list_adding.png" alt="EMAIL VALIDATION SYSTEM - My Listing" />
+      </div>
+	  
+		<p>Clicking on verify button will make start the verification process in background. </p>
+	  
+	    <div class="img-cont">
+         <img src="assets/images/my_list_added.png" alt="EMAIL VALIDATION SYSTEM - My Listing" />
+      </div>
+	  
+	  <p>Once verification gets complete, user can see the result like this</p>
+	
+	  <div class="img-cont">
+         <img src="assets/images/my_list_verified.png" alt="EMAIL VALIDATION SYSTEM - My Listing" />
+      </div>
+	    	    
+		<p>Verified results can be downloaded into different segments</p>
+		
+		<div class="img-cont">
+         <img src="assets/images/download.png" alt="EMAIL VALIDATION SYSTEM - My Listing" />
+      </div>
+	 
+      <hr>
+	  
+	  
+	        <hr>
+      <h3 id="howtoLeadManagement"><strong>D) HOW TO USE - LEAD MANAGEMENT</strong> - <a href="#toc">top</a></h3>
+      <div class="img-cont">
+         <img src="assets/images/lead_management.png" alt="Email Lead Management" />
+      </div>
+      <p>Email / Lead Management, allows you simply manage your saved scan email address list. So you can simply export your email list and can compare email address scan status later.</p>
+
+	  
+	  
+	  
+      <h3 id="howtoSendMail"><strong>E) HOW TO USE - SEND MAIL</strong> - <a href="#toc">top</a></h3>
+      <p>Send Mail, allows you to send bulk email addresses to imported addresses</p>
+      <div class="img-cont">
+         <img src="assets/images/send-mail.png" alt="Send Mail" />
+      </div>
+      <p>(1.) On step #1, import a CSV file with all email addresses where you want to send emails. Email address column in CSV file needs to have label "Email" so import can get successful.</p>
+      <p>(2.) Delivery Report will show you a brief status of how your email has been handled to receivers.</p>
+      <p>
+      <pre>
+(3.) On step #2, Email Form ---
+
+  From: Type your email address from where it should be sent.
+
+  To: All imported or manually typed receiver email address will be visible here. 
+  If you manually add email address then use "," (without double quotation mark) to keep each email separated.
+
+  Subject: Subject of email that you will be sending.
+
+  Message: Here you will input your email body content. 
+  You can either use the visual editor or add HTML source code of your email template.
+
+  Send: For initiating the email to receivers.
+        </pre>
+      </p>
+
+	        <hr>	  
+	  	
+		
+			  <h3 id="howtoUserManagement"><strong>F) HOW TO USE - USER MANAGEMENT</strong> - <a href="#toc">top</a></h3>
+
+<p>This page shows all registered users information and data. Admin have access to activate and suspend a user access to portal.</p>
+	  
+	  	   
+		    <div class="img-cont">
+         <img src="assets/images/userlist.png" alt="User List" />
+      </div>
+     
+	   <hr>
+	   
+	   
+			  <h3 id="howtoProfile"><strong>G) HOW TO USE - USER PROFILE</strong> - <a href="#toc">top</a></h3>
+
+<p>This page shows logged in user profile data. User can modify and change their name, email, password and even upload their avatar from here.</p>
+	  
+	  	   
+		    <div class="img-cont">
+         <img src="assets/images/profile.png" alt="User List" />
+      </div>
+     
+	   <hr>
+	   
+	   
+	   
+	  
+      <h3 id="howtoSettings"><strong>H) HOW TO USE - SETTINGS</strong> - <a href="#toc">top</a></h3>
+      <div class="img-cont">
+         <img src="assets/images/settings.png" alt="Settings" />
+      </div>
+      <p>Settings, allows configuring email verifier settings and all settings related with script. Before using send mail and email validation make sure to setup both of their settings so your email gets verified and send without any issues.</p>
+<pre>
+(1.) Send Mail - 
+
+  Email Amount: the total amount of email will be sending out from mail server on time limit per hour.
+  Time Limit: hourly time limit.
+
+  Example: If you have 10,000 email address to receive an email within 24hrs 
+  but in a limit of 1,000 emails, each time to be sent out from your web server 
+  then set the time limit at 1 and email amount at 1,000. 
+  So each hour server will process 1,000 emails and within 24hrs it will be 10,000.
+</pre>
+		
+<pre>
+(2.) Registration & Sitename and Logo -
+
+  Allows to disable and enable public registration on site.
+  Allows to change and modify site name and logo to completely white label your business site.				
+</pre>
+		
+<pre>
+(3.) Account Type Settings -
+		
+  In account type settings you can manage and add any free account, role account or 
+  disposable email domain by your own even if not provided by us.	
+</pre>
+
+<pre>
+(4.) Scan Mail Settings - 
+
+  To have scan validation "My List" system to work properly, It is recommended to set a scan from mail.
+  
+  Also, you can modify and set a timeout between each email scan from script side only.
+  This timeout cannot override delay between server to server side network connection speed. 
+</pre>
+
+ <hr>
+ 
+	  
+	  
+      <h3 id="evpTroubleshooting"><strong>I) Troubleshooting</strong> - <a href="#toc">top</a></h3>
+	  
+	  
+	<div class="q_scanlimit">  
+	
+	  <h4>Scan stops working after a fixed period of time / 504 error?</h4>
+	  
+	  <div class="img-cont">
+         <img src="assets/images/nojs.png" alt="nojs" />
+      </div>	  
+	  
+	  <p>This issue is very common if you are using <strong>nginx proxy, apache with php-fpm/fastcgi</strong> and have lower timeout value settings on php script run time when you scan thousand of emails list. Based on server configuration this issue can be resolved in several ways.</p>
+	  
+	  <p>If you’re using <a href="https://creativedevstudio.com" target="_blank" rel="noopener noreferrer">VPS hosting</a>, there are a few extra things you can try to fix the 504 gateway timeout error. They would involve tweaking the server settings and increasing specific resource limits.</p>
+	  
+	  
+	  
+	  <h5>Apache</h5>
+	  
+	  
+<p>Apache users may increase the default&nbsp;<strong>timeout&nbsp;</strong>value in the&nbsp;<strong>httpd.conf&nbsp;</strong>file. For example:</p>	  
+
+<pre><code>
+# Timeout: The number of seconds before receives and sends time out.
+Timeout 99999</code></pre>
+
+
+<p>Furthermore, increasing the <strong>max_execution_time&nbsp;</strong>limit&nbsp;in <strong>php.ini</strong> can also bring positive results:</p>
+
+
+<pre><code>
+max_execution_time = 99999;
+</code></pre>
+
+
+<p>Save the changes, restart apache, and re-check. The 504 gateway timeout error should be gone if the cause was insufficient request timeout value.</p>
+
+
+<h5>Nginx + FastCGI (php-fpm enabled):</h5>
+
+
+<p>If your VPS utilizes Nginx, try increasing the following values in <strong>/etc/nginx/conf.d/timeout.conf</strong></p>
+
+<pre><code>
+proxy_connect_timeout 99999; 
+proxy_send_timeout 99999; 
+proxy_read_timeout 99999; 
+send_timeout 99999;
+</code></pre>
+
+
+<p> In php.ini set :
+
+<pre><code>
+max_execution_time = 99999;
+</code></pre>
+	  
+	  
+<p>Change <strong>request_terminate_timeout</strong> parameter (commented by default) in </strong>/etc/php-fpm.d/www.conf </strong> (for Debian /etc/php5/fpm/pool.d/www.conf) file:
+	  
+<pre><code>
+request_terminate_timeout = 99999;
+</code></pre>
+
+
+<p>Add <strong>fastcgi_read_timeout</strong> variable inside the 'nginx' virtual host configuration:</p>
+
+
+<pre><code>
+fastcgi_read_timeout 99999;
+</code></pre>
+
+
+<p>Add/increase the following values in the 'http' section of the /etc/nginx/nginx.conf file:</p>
+
+<pre><code>
+fastcgi_buffers 8 128k;
+fastcgi_buffer_size 256k;
+</code></pre>
+
+
+<p>Restart both 'apache' and 'nginx'.</p>
+
+
+<p>==========================================</p>
+
+
+<p>If above steps doesn&#8217;t work, try this one..</p>
+
+<ol>
+
+<li>Open your <code>nginx.conf</code> file located in <code>/etc/nginx</code> directory.</li>
+<li>Add this below piece of code under <code>http {</code> section:
+
+<pre><code>
+client_header_timeout 99999;
+client_body_timeout 99999;
+fastcgi_read_timeout 99999;
+client_max_body_size 32m;
+fastcgi_buffers 8 128k;
+fastcgi_buffer_size 128k;
+</code></pre>
+
+<p>Note: If its already present, change the values according.</li>
+
+<li>Reload Nginx and php5-fpm.
+
+<pre><code>
+$ service nginx reload
+$ service php5-fpm reload
+</code></pre>
+
+<p>If the error persists, consider increasing the values.</li>
+
+</ol>
+
+<p>=========================================</p>
+
+<p><strong>Changes in php.ini</strong></p>
+
+<p>Try raising max_execution_time setting in php.ini file (CentOS path is /etc/php.ini):</p>
+
+<pre><code>
+max_execution_time = 99999;
+</code></pre>
+
+Changes in PHP-FPM
+
+Try raising request_terminate_timeout setting in php.ini file (CentOS path is /etc/php-fpm.d):
+
+<pre><code>
+request_terminate_timeout = 99999;
+Changes in Nginx Config
+</code></pre>
+
+Finally, add fastcgi_read_timeout variable inside our Nginx virtual host configuration:
+
+<pre><code>
+location ~* \.php$ {
+    include         fastcgi_params;
+    fastcgi_index   index.php;
+    fastcgi_read_timeout 99999;
+    fastcgi_pass    127.0.0.1:9000;
+    fastcgi_param   SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+}
+</code></pre>
+
+Reload PHP-FPM and Nginx
+
+<pre><code>
+service php–fpm restart
+service nginx restart
+</code></pre>
+
+
+
+
+
+</div>
+<br/> <br/>
+	  
+	  <h4>Browser Do Not Support Javascript?</h4>
+	  
+	  <div class="img-cont">
+         <img src="assets/images/nojs.png" alt="nojs" />
+      </div>	  
+	  
+	  <p>This error is very common if you have javascript disable in your browser or your browser is way oudated that it do not support javascript. Sometimes browser extensions can also have javascript disable, so make sure you have no javascript disabler extension active in your browser. Try on a browser which comes with javascript support builtin. Our tested browsers: IE10, IE11, Edge, Firefox, Chrome, Safari, Opera</p>
+	  
+	  <h4>How To Enable Session Support / Cookies for PHP?</h4>
+	  
+	  <div class="img-cont">
+         <img src="assets/images/install-issues.png" alt="install-issue" />
+      </div>
+	  
+      <p>By default PHP comes with session support enabled. But if PHP session is not accepting cookies then session cookie support can be turned on automatically at the site level, or manually in each PHP page script: Turning on session support automatically at the site level we have to modify some setting in php.ini file. you can get php.ini file in the folder you install PHP. To your sessions, you have to set or reset the following parameter in your php.ini file</p>
+      <pre>
+        Define path to save sessions ; Replace to your path.
+        session.save_path = "C:\php\sessiondata\"
+
+        Directory related to server session should be under 777 chmod > fully writable
+
+        Whether to use cookies.
+        session.use_cookies = 1 
+
+        Name of the session (used as cookie name).
+        session.name = PHPSESSID
+
+        Define Lifetime in seconds of cookie or, if 0, until browser is restarted.
+        session.cookie_lifetime = 0
+
+        ;The path for which the cookie is valid.
+        session.cookie_path = /
+
+        The domain for which the cookie is valid.
+        session.cookie_domain =
+
+        Handler used to serialize data. php is the standard serializer of PHP.
+        session.serialize_handler = php
+        </pre>
+      <p>There are some more setting which may be used to modify your Sessions. For more  Details refer php.ini</p>
+	  
+	  <h4>Browser Blocking Cookies?</h4>
+	  <p>Check your browser default settings and see if it accepting cookies. By default all browser allow accept cookies. But sometimes third party internet security or browser extensions can prevent accepting cookies. Permission of those app has to be changed to allow cookies in browser so script works normally.</p>
+	  
+	  <h4>Invalid Session Token?</h4>
+	  <p>User session token or CSRF token can only be changed if you block creating new session or remove existing tokens during your installation process or any activity within the script. This protection is made simply for preventing token highjack or CSRF attack. To not facing this error, make sure you are allowing sessions to use cookies and not removing existing session tokens after generating browser sided tokens. Without manipulating default browser settings. :)</p>
+
+      <hr>
+	  
+	  <h3 id="evpChangelog"><strong>J) Change Log</strong> - <a href="#toc">top</a></h3>
+	  
+	  <div class="changelog">
+	  <p>Version 1.6</p>
+	  <pre>Fixed: license key activation</pre>
+	  <pre>Fixed: license key activation</pre>
+	  <pre>Fixed: installation error field value not found</pre>
+	  <pre>Fixed: user ip visibility issue</pre>
+	  <pre>Fixed: user list navigation</pre>
+	  <pre>Fixed: login issue in IE</pre>
+	  <pre>Update: documentation - troubleshooting</pre>
+	  
+	  <p>Version 1.5</p>
+	  <pre>Design improvement</pre>
+	  <pre>Added: Background mail verification process</pre>
+	  <pre>Added: Quick Validator</pre>
+	  <p>Version 1.4</p>
+	  <pre>Added: Multi user system</pre>
+	  <pre>Added: Segment based result export</pre>
+	  <pre>Added: User management</pre>
+	  <pre>Added: Dashboard Report</pre>
+	  <p>Version 1.3</p>
+	  <pre>Added: Additional Settings</pre>
+	  <pre>Added: User Profile</pre>
+	  <p>Version 1.2</p>
+	  <pre>Added .htaccess</pre>
+	  <p>Version 1.1</p>
+	  <pre>Adding more error handling at installation script.
+Adding password reset features.</pre>
+	  <p>Version 1.0</p>
+	  <pre>Initial Release.</pre>
+	  </div>
+
+	  <hr>
+
+      <h3 id="evpSupport"><strong>K) Support, Sources and Credits</strong> - <a href="#toc">top</a></h3>
+      <p>Please contact for support: <a href="mailto:info@creativedevstudio.com">info@creativedevstudio.com</a></p>
+      <p>I've used the following open source files and images as listed.
+      <ul>
+         <li>Bootstrap 4: https://getbootstrap.com/</li>
+         <li>Fontawesome: https://fontawesome.com/</li>
+         <li>Login Background Images: https://pixabay.com </li>
+         <li>Ckeditor 4 : https://ckeditor.com/ckeditor-4/</li>
+         <li>Chart.js: https://www.chartjs.org/ </li>
+         <li>Modernizr : https://modernizr.com/ </li>
+      </ul>
+      <hr>
+      <p>Once again, thank you so much for purchasing this Script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script. No guarantees, but I'll do my best to assist. If you have a more general question relating to the script on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+      <p class="append-bottom alt large">
+         <a href="//creativedevstudio.com" target="_blank"><strong>CreativeDev Studio</strong></a>
+      </p>
+      <p><a href="#toc">Go To Table of Contents</a></p>
+      <hr class="space">
+   </div>
+   <!-- end div .container -->
+</body>
+</html>
